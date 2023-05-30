@@ -30,8 +30,14 @@ axios.defaults.baseURL = 'https://pixabay.com/api/';
 const KEY = '36100534-ddfc0a58043267e0f9d738ed0';
 
 async function fetchImages(query, page, perPage) {
-  const response = await axios.get(
-    `?key=${KEY}&q=${query}&image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=${perPage}`
-  );
-  return response;
+  return await axios
+    .get(
+      `?key=${KEY}&q=${query}&image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=${perPage}`
+    )
+    .then(response => {
+      return response.data;
+    })
+    .catch(error => {
+      console.log(error);
+    });
 }
