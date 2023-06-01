@@ -2,7 +2,7 @@
 .form-container {
   display: flex;
   justify-content: center;
-  padding: 20px 0px;
+  padding: 10px 0px;
   background-color: #314ad5;
 }
 
@@ -14,4 +14,9 @@ ul {
   list-style: none;
 }
 
-/*# sourceMappingURL=main.min.css.map */
+img {
+  height: 240px;
+  width: 320px;
+}
+
+/*# sourceMappingURL=main.css.map */
