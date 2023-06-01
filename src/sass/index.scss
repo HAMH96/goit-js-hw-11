@@ -1,2 +1,16 @@
 @import './common';
-@import './example';
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: #314ad5;
+}
+
+.search-form-input{
+    height: 24px;
+}
+
+ul {
+    list-style: none;
+}

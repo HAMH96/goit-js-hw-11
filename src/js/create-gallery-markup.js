@@ -1,13 +1,15 @@
 export function createGalleryMarkup(dataPhotos) {
   return dataPhotos
     .map(photo => {
-    //   const poster = movie.poster_path
-    //     ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
-    //     : noposter;
+      //   const poster = movie.poster_path
+      //     ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
+      //     : noposter;
       return `    
       <li>
         <div class="photo-card">
-            <img src="${photo.webformatURL}" alt="${photo.tags}" loading="lazy"/>
+            <a href="${photo.largeImageURL}">    
+                <img src="${photo.webformatURL}" alt="${photo.tags}" loading="lazy"/>
+            </a>
             <div class="info">
                 <p class="info-item">
                     <b>Likes</b>

@@ -1,0 +1,17 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+  background-color: #314ad5;
+}
+
+.search-form-input {
+  height: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+/*# sourceMappingURL=main.min.css.map */
