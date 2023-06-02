@@ -1,9 +1,6 @@
 export function createGalleryMarkup(dataPhotos) {
   return dataPhotos
     .map(photo => {
-      //   const poster = movie.poster_path
-      //     ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
-      //     : noposter;
       return `    
       <li>
         <div class="photo-card">
@@ -11,22 +8,30 @@ export function createGalleryMarkup(dataPhotos) {
                 <img src="${photo.webformatURL}" alt="${photo.tags}" loading="lazy"/>
             </a>
             <div class="info">
-                <p class="info-item">
-                    <b>Likes</b>
+                <div class="info-item">
+                    <p class="info-item-title">
+                        <b>Likes</b>
+                    </p>
                     <p>${photo.likes}</p>
-                </p>
-                <p class="info-item">
-                    <b>Views</b>
+                </div>
+                <div class="info-item">
+                    <p class="info-item-title">
+                        <b>Views</b>
+                    </p>
                     <p>${photo.views}</p>
-                </p>
-                <p class="info-item">
-                    <b>Comments</b>
+                </div>
+                <div class="info-item">
+                    <p class="info-item-title">
+                        <b>Comments</b>
+                    </p>
                     <p>${photo.comments}</p>
-                </p>
-                <p class="info-item">
-                    <b>Downloads</b>
+                </div>
+                <div class="info-item">
+                    <p class="info-item-title">
+                        <b>Downloads</b>
+                    </p>
                     <p>${photo.downloads}</p>
-                </p>
+                </div>
             </div>
         </div>
       </li>`;
